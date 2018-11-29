@@ -17,7 +17,7 @@ output = output %>%
 pred = fread('/Users/youssefberrada/Downloads/firstname_lastname.csv')
 
 pred = pred %>%
-  select(CCAT,ECAT,MCAT,GCAT)%>%
+  select(CCAT,ECAT,GCAT,MCAT)%>%
   sapply(as.numeric)
 
 # This is a pooled Micro-average Accuracy measure
